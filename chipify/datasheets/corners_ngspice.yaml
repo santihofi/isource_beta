@@ -1,0 +1,26 @@
+parameters:
+  temp: [27, 0, 80]
+  seed: range(1)
+  vdd: [3.3, 3.2]
+  sigma: [1]
+  corner_mos: ['tt', 'ss', 'ff', 'sf', 'fs']
+  corner_res: ['typ']
+  w_load: ['5u']
+tests:
+  tb_isource_beta_op:
+    engine: ngspice
+    idd:
+      unit: 'A'
+    out:
+      unit: 'V'
+    iout:
+      min: 8.0e-07
+      max: 1.2e-06
+      unit: 'A'
+  tb_isource_beta_tran:
+    transient_signals: [iout]
+    engine: ngspice
+equations:
+  iout: out/res
+transient_equations:
+  out_d: outp-outn

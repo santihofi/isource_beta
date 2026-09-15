@@ -1,0 +1,56 @@
+** sch_path: /foss/designs/heichip/isource_beta/testbenches/xschem/tb_isource_beta_op.sch
+**.subckt tb_isource_beta_op
+V2 vdd GND {{vdd}}
+V3 vdd net1 0
+.save i(v3)
+x1 net1 out GND isource_beta
+R1 out GND {{res}}
+**** begin user architecture code
+
+
+.temp {{ temp }}
+.param mc_ok = {{ sigma }}
+.option SEED = {{ seed }}
+.option method=gear
+
+.control
+set num_threads=1
+
+save all
+op
+let idd = i(V3)
+echo MY_DATA:$&idd $&out
+quit
+.endc
+
+
+
+
+
+.lib cornerMOShv.lib mos_{{ corner_mos }}
+.lib cornerRES.lib res_{{ corner_res }}
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  heichip/isource_beta/schematic/xschem/isource_beta.sym # of pins=3
+** sym_path: /foss/designs/heichip/isource_beta/schematic/xschem/isource_beta.sym
+** sch_path: /foss/designs/heichip/isource_beta/schematic/xschem/isource_beta.sch
+.subckt isource_beta vdd out vss
+*.opin out
+*.iopin vdd
+*.iopin vss
+XM1 net1 net2 vdd vdd sg13_hv_pmos w=4u l=4u ng=1 m=1 mm_ok=1
+XM2 net2 net2 vdd vdd sg13_hv_pmos w=4u l=4u ng=1 m=1 mm_ok=1
+XM3 net1 net1 vss vss sg13_hv_nmos w=2u l=4u ng=1 m=1 mm_ok=1
+XM4 net2 net1 net3 vss sg13_hv_nmos w=10u l=4u ng=1 m=1 mm_ok=1
+XR1 net3 vss vss rppd w=1e-6 l=200e-6 m=1 b=0 mm_ok=1
+XM5 out net2 vdd vdd sg13_hv_pmos w=4u l=4u ng=1 m=1 mm_ok=1
+XMS1 net4 vdd vdd vdd sg13_hv_pmos w=4u l=4u ng=1 m=1 mm_ok=1
+XMS2 net4 net1 vss vss sg13_hv_nmos w=4u l=4u ng=1 m=1 mm_ok=1
+XMS3 net2 net4 vss vss sg13_hv_nmos w=4u l=4u ng=1 m=1 mm_ok=1
+.ends
+
+.GLOBAL GND
+.end

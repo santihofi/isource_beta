@@ -1,0 +1,73 @@
+** sch_path: /foss/designs/heichip/isource_beta/testbenches/xschem/tb_isource_beta_op.sch
+**.subckt tb_isource_beta_op
+V2 vdd GND {{vdd}}
+V3 vdd net1 0
+.save i(v3)
+x1 vss net1 vdd out vdd vdd GND vdd isource_beta
+XM3 out out GND GND sg13_hv_nmos w={{w_load}} l=4u ng=1 m=1 mm_ok=1
+**** begin user architecture code
+
+
+.temp {{ temp }}
+.param mc_ok = {{ sigma }}
+.option SEED = {{ seed }}
+.option method=gear
+
+.control
+set num_threads=1
+
+save all
+save @n.xm3.nsg13_hv_nmos[ids]
+op
+let idd = i(V3)
+let iout = @n.xm3.nsg13_hv_nmos[ids]
+
+echo MY_DATA:$&idd $&out $&iout
+quit
+.endc
+
+
+
+
+
+.lib cornerMOShv.lib mos_{{ corner_mos }}
+.lib cornerRES.lib res_{{ corner_res }}
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  heichip/isource_beta/schematic/xschem/isource_beta.sym # of pins=8
+** sym_path: /foss/designs/heichip/isource_beta/schematic/xschem/isource_beta.sym
+** sch_path: /foss/designs/heichip/isource_beta/schematic/xschem/isource_beta.sch
+.subckt isource_beta b0 vdd b1 out b2 b3 vss b4
+*.opin out
+*.iopin vdd
+*.iopin vss
+*.iopin b0
+*.iopin b1
+*.iopin b2
+*.iopin b3
+*.iopin b4
+XM1 net1 net2 vdd vdd sg13_hv_pmos w=4u l=4u ng=1 m=1 mm_ok=1
+XM2 net2 net2 vdd vdd sg13_hv_pmos w=4u l=4u ng=1 m=1 mm_ok=1
+XM3 net1 net1 vss vss sg13_hv_nmos w=40u l=4u ng=10 m=1 mm_ok=1
+XM4 net2 net1 iref vss sg13_hv_nmos w=40u l=4u ng=10 m=3 mm_ok=1
+XM5 out net2 vdd vdd sg13_hv_pmos w=4u l=4u ng=1 m=1 mm_ok=1
+XMS1 net3 vdd vdd vdd sg13_hv_pmos w=1u l=10u ng=1 m=1 mm_ok=1
+XMS2 net3 net1 vss vss sg13_hv_nmos w=10u l=0.45u ng=1 m=1 mm_ok=1
+XMS3 net2 net3 vss vss sg13_hv_nmos w=10u l=0.45u ng=1 m=1 mm_ok=1
+XR10 net7 vss vss rppd w=1e-6 l=160e-6 m=1 b=0 mm_ok=1
+XR2 iref net5 vss rppd w=1e-6 l=10e-6 m=1 b=0 mm_ok=1
+XM6 iref b0 net5 vss sg13_hv_nmos w=20u l=0.45u ng=4 m=1 mm_ok=1
+XR3 net5 net4 vss rppd w=1e-6 l=20e-6 m=1 b=0 mm_ok=1
+XR4 net4 net6 vss rppd w=1e-6 l=40e-6 m=1 b=0 mm_ok=1
+XR5 net6 net7 vss rppd w=1e-6 l=80e-6 m=1 b=0 mm_ok=1
+XM7 net5 b1 net4 vss sg13_hv_nmos w=20u l=0.45u ng=4 m=1 mm_ok=1
+XM8 net4 b2 net6 vss sg13_hv_nmos w=20u l=0.45u ng=4 m=1 mm_ok=1
+XM9 net6 b3 net7 vss sg13_hv_nmos w=20u l=0.45u ng=4 m=1 mm_ok=1
+XM10 net7 b4 vss vss sg13_hv_nmos w=20u l=0.45u ng=4 m=1 mm_ok=1
+.ends
+
+.GLOBAL GND
+.end

@@ -1,0 +1,18 @@
+temp,seed,vdd,sigma,corner_mos,corner_res,sim_error,run_id,tb_isource_beta_op__error,tb_isource_beta_op_overall_pass,idd,idd_pass,out,out_pass,global_pass,simulation_duration_s_total
+27,0.0,3.3,1,tt,typ,"tb_isource_beta_op: [ngspice] netlist generation failed: Xschem ran (rc=1) but wrote no netlist named 'tb_isource_beta_op'. recent_files=['/tmp/chipify_f828d4bc08/tb_isource_beta_op.xschem.log']. FAST_TMP contents: ['tb_isource_beta_op.xschem.log']. See /tmp/chipify_f828d4bc08/tb_isource_beta_op.xschem.log. log_tail=Using run time directory XSCHEM_SHAREDIR = /foss/tools/xschem/share/xschem
+Sourcing /foss/tools/xschem/share/xschem/xschemrc init file
+Sourcing /headless/.xschem/xschemrc init file
+MODELS_NGSPICE: /foss/pdks/ihp-sg13g2/libs.tech/ngspice/models
+MODELS_XYCE: /foss/pdks/ihp-sg13g2/libs.tech/xyce/models
+SG13G2_MODELS_VACASK: /foss/pdks/ihp-sg13g2/libs.tech/vacask/models
+Netlist mode: <default>
+Sourced library init file /foss/tools/xschem/share/doc/xschem/analyses/lib_init.tcl
+load_schematic(): unable to open file: /foss/designs/heichip/isource_beta/testbenches/xschem/tb_isource_beta_op.sch, ffname=/foss/designs/heichip/isource_beta/testbenches/xschem/tb_isource_beta_op.sch",000000,"tb_isource_beta_op: [ngspice] netlist generation failed: Xschem ran (rc=1) but wrote no netlist named 'tb_isource_beta_op'. recent_files=['/tmp/chipify_f828d4bc08/tb_isource_beta_op.xschem.log']. FAST_TMP contents: ['tb_isource_beta_op.xschem.log']. See /tmp/chipify_f828d4bc08/tb_isource_beta_op.xschem.log. log_tail=Using run time directory XSCHEM_SHAREDIR = /foss/tools/xschem/share/xschem
+Sourcing /foss/tools/xschem/share/xschem/xschemrc init file
+Sourcing /headless/.xschem/xschemrc init file
+MODELS_NGSPICE: /foss/pdks/ihp-sg13g2/libs.tech/ngspice/models
+MODELS_XYCE: /foss/pdks/ihp-sg13g2/libs.tech/xyce/models
+SG13G2_MODELS_VACASK: /foss/pdks/ihp-sg13g2/libs.tech/vacask/models
+Netlist mode: <default>
+Sourced library init file /foss/tools/xschem/share/doc/xschem/analyses/lib_init.tcl
+load_schematic(): unable to open file: /foss/designs/heichip/isource_beta/testbenches/xschem/tb_isource_beta_op.sch, ffname=/foss/designs/heichip/isource_beta/testbenches/xschem/tb_isource_beta_op.sch",False,,False,,False,False,0.7977674180001486

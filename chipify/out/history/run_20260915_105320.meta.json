@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-09-15T10:53:20",
+  "yaml": "corners_ngspice.yaml",
+  "host": "42588fe42d87",
+  "python": "3.12.3",
+  "ngspice": "******",
+  "vacask": "This is vacask a9d8860.",
+  "git_commit": "",
+  "duration_s": 0.7977674180001486,
+  "total_runs": 1,
+  "valid_runs": 0,
+  "global_yield": 0.0,
+  "tran_dir": "",
+  "analysis_dirs": {},
+  "templates_dir": "",
+  "notes": "",
+  "tags": []
+}

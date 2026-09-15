@@ -1,0 +1,12 @@
+* Place this .save file with a .include line in your testbench
+
+.save @n.xm3.nsg13_hv_nmos[ids]
+.save @n.xm3.nsg13_hv_nmos[gm]
+.save @n.xm3.nsg13_hv_nmos[gds]
+.save @n.xm3.nsg13_hv_nmos[vth]
+.save @n.xm3.nsg13_hv_nmos[vgs]
+.save @n.xm3.nsg13_hv_nmos[vdss]
+.save @n.xm3.nsg13_hv_nmos[vds]
+.save @n.xm3.nsg13_hv_nmos[cgg]
+.save @n.xm3.nsg13_hv_nmos[cgsol]
+.save @n.xm3.nsg13_hv_nmos[cgdol]

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-09-15T12:12:49",
+  "yaml": "corners_ngspice.yaml",
+  "host": "42588fe42d87",
+  "python": "3.12.3",
+  "ngspice": "******",
+  "vacask": "This is vacask a9d8860.",
+  "git_commit": "",
+  "duration_s": 3.9360701000005065,
+  "total_runs": 270,
+  "valid_runs": 270,
+  "global_yield": 77.77777777777779,
+  "tran_dir": "",
+  "analysis_dirs": {},
+  "templates_dir": "/foss/designs/heichip/isource_beta/chipify/out/history/run_20260915_121249_templates",
+  "notes": "",
+  "tags": []
+}

@@ -1,0 +1,4 @@
+temp,seed,vdd,sigma,corner_mos,corner_res,res,sim_error,run_id,tb_isource_beta_op__error,idd,idd_pass,out,out_pass,tb_isource_beta_op_overall_pass,global_pass,simulation_duration_s_total
+27,0.0,3.3,1,tt,typ,50000,None,000000,None,1.10102e-05,True,0.183814,True,True,True,1.1941880869999295
+27,0.0,3.3,1,tt,typ,80000,None,000002,None,1.10095e-05,True,0.294045,True,True,True,
+27,0.0,3.3,1,tt,typ,10000,None,000001,None,1.10114e-05,True,0.0367746,True,True,True,

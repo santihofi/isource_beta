@@ -1,0 +1,56 @@
+** sch_path: /foss/designs/heichip/isource_beta/testbenches/xschem/tb_isource_beta_op.sch
+**.subckt tb_isource_beta_op
+V2 vdd GND {{vdd}}
+V3 vdd net1 0
+.save i(v3)
+x1 net1 out GND isource_beta
+R1 out GND 50k
+**** begin user architecture code
+
+
+.temp {{ temp }}
+.param mc_ok = {{ sigma }}
+.option SEED = {{ seed }}
+.option method=gear
+
+.control
+set num_threads=1
+
+save all
+op
+let idd = i(V3)
+echo MY_DATA:$&idd $&out
+quit
+.endc
+
+
+
+
+
+.lib cornerMOShv.lib mos_{{ corner_mos }}
+.lib cornerRES.lib res_{{ corner_res }}
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  heichip/isource_beta/schematic/xschem/isource_beta.sym # of pins=3
+** sym_path: /foss/designs/heichip/isource_beta/schematic/xschem/isource_beta.sym
+** sch_path: /foss/designs/heichip/isource_beta/schematic/xschem/isource_beta.sch
+.subckt isource_beta vdd out vss
+*.opin out
+*.iopin vdd
+*.iopin vss
+*  M1 -  sg13_hv_pmos  IS MISSING !!!!
+*  M2 -  sg13_hv_pmos  IS MISSING !!!!
+*  M3 -  sg13_hv_nmos  IS MISSING !!!!
+*  M4 -  sg13_hv_nmos  IS MISSING !!!!
+*  R1 -  rppd  IS MISSING !!!!
+*  M5 -  sg13_hv_pmos  IS MISSING !!!!
+*  MS1 -  sg13_hv_pmos  IS MISSING !!!!
+*  MS2 -  sg13_hv_nmos  IS MISSING !!!!
+*  MS3 -  sg13_hv_nmos  IS MISSING !!!!
+.ends
+
+.GLOBAL GND
+.end
