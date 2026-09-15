@@ -1870,3 +1870,388 @@ ValueError: Datasheet '/foss/designs/heichip/isource_beta/chipify/datasheets/cor
 2026-09-15 13:36:06 [INFO    ] chipify.simulator: Spawning pool: 11 workers, 30 tasks.
 2026-09-15 13:36:06 [DEBUG   ] chipify.simulator: Pool created (forkserver, 11 workers).
 2026-09-15 13:36:06 [DEBUG   ] chipify.simulator: 30 batch tasks submitted (chunk_size=1).
+2026-09-15 13:56:17 [INFO    ] chipify.simulator: Pool finished cleanly. 30 results collected.
+2026-09-15 13:56:17 [INFO    ] chipify.simulator: run_sim() exited.
+2026-09-15 13:56:17 [INFO    ] chipify.gui_qt.sim_worker: run_sim returned 30 rows. Saving results…
+2026-09-15 13:56:18 [INFO    ] chipify.run_meta: Wrote run metadata: /foss/designs/heichip/isource_beta/chipify/out/history/run_20260915_135618.meta.json
+2026-09-15 13:56:18 [INFO    ] chipify.run_meta: Wrote run metadata: /foss/designs/heichip/isource_beta/chipify/out/simulation_results.meta.json
+2026-09-15 13:56:18 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'iout': 'out/res' → 'out/res'
+2026-09-15 13:56:18 [WARNING ] chipify.uikit.services.equations: Scalar equation 'iout' failed: name 'res' is not defined
+2026-09-15 13:57:11 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 13:57:11 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 13:57:15 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 13:57:15 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 13:57:16 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 13:57:16 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 13:57:17 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 13:57:17 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 13:57:17 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 13:57:17 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 13:57:18 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 13:57:18 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 13:57:19 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 13:57:19 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 13:57:19 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 13:57:19 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 13:57:20 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 13:57:20 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 13:57:20 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 13:57:20 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 13:57:21 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 13:57:21 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 13:57:22 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 13:57:22 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 13:57:22 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 13:57:22 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 13:57:23 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 13:57:23 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 13:57:23 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 13:57:23 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 13:57:23 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 13:57:23 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 13:57:24 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 13:57:24 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:00:50 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:00:50 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:00:50 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:00:50 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:00:51 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:00:51 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:00:51 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:00:51 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:00:52 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:00:52 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:00:52 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:00:52 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:00:53 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:00:53 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:00:53 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:00:53 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:00:54 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:00:54 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:00:55 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:00:55 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:00:55 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:00:55 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:00:56 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:00:56 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:00:56 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:00:56 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:00:57 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:00:57 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:00:57 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:00:57 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:00:58 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:00:58 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:00:58 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:00:58 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:22 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:22 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:22 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:22 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:23 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:23 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:23 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:23 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:24 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:24 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:25 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:25 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:25 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:25 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:26 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:29 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:31 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:31 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:31 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:31 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:32 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:32 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:32 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:32 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:33 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:33 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:33 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:33 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:58 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:58 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:01:59 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:01:59 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:02:00 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:02:00 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:02:00 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:02:00 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:02:01 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:02:01 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:02:01 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:02:01 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:02:01 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:02:01 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:02:02 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:02:02 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:02:02 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:02:02 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:02:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:02:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:02:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:02:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:02:04 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:02:04 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:02:04 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:02:04 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:02:05 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:02:05 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:02:05 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:02:05 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:02:06 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:02:06 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:02:06 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:02:06 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:38 [INFO    ] chipify.gui_qt.controllers.simulation: SimulationController.start: corners_ngspice.yaml
+2026-09-15 14:04:38 [INFO    ] chipify.gui_qt.sim_worker: SimWorker.run on thread Dummy-182
+2026-09-15 14:04:38 [INFO    ] chipify.simulator: run_sim() started. Testbenches: 2
+2026-09-15 14:04:38 [INFO    ] chipify.simulator: Phase 1/3: generating parameter cases...
+2026-09-15 14:04:38 [INFO    ] chipify.simulator: Total cases: 30
+2026-09-15 14:04:38 [INFO    ] chipify.simulator: Simulator engine(s) in use: ngspice
+2026-09-15 14:04:38 [INFO    ] chipify.simulator: Phase 2/3: generating Xschem templates...
+2026-09-15 14:04:38 [INFO    ] chipify.engines.xschem: run_xschem: /foss/designs/heichip/isource_beta/testbenches/xschem/tb_isource_beta_op.sch (mode=spice)
+2026-09-15 14:04:38 [INFO    ] chipify.engines.xschem: Xschem env: HOME=/headless XSCHEM_SHAREDIR=None PATH=/headless/.local/bin:/foss/tools/bin:/foss/tools/sak:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/foss/tools/kactus2:/foss/tools/klayout:/foss/tools/osic-multitool cwd=/foss/designs/heichip/isource_beta/chipify
+2026-09-15 14:04:38 [INFO    ] chipify.engines.xschem: Xschem PID=19671 cmd=xschem -n --spice -q -x -o /tmp/chipify_f828d4bc08 /foss/designs/heichip/isource_beta/testbenches/xschem/tb_isource_beta_op.sch
+2026-09-15 14:04:38 [INFO    ] chipify.engines.xschem: xschem post-run scan: recent_files=['../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_op.xschem.log', '../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_op.spice'] netlist_files=['../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_op.spice'] chosen=../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_op.spice
+2026-09-15 14:04:38 [INFO    ] chipify.engines.xschem: Xschem netlist generated OK (spice).
+2026-09-15 14:04:38 [INFO    ] chipify.engines.xschem: run_xschem: /foss/designs/heichip/isource_beta/testbenches/xschem/tb_isource_beta_tran.sch (mode=spice)
+2026-09-15 14:04:38 [INFO    ] chipify.engines.xschem: Xschem env: HOME=/headless XSCHEM_SHAREDIR=None PATH=/headless/.local/bin:/foss/tools/bin:/foss/tools/sak:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/foss/tools/kactus2:/foss/tools/klayout:/foss/tools/osic-multitool cwd=/foss/designs/heichip/isource_beta/chipify
+2026-09-15 14:04:38 [INFO    ] chipify.engines.xschem: Xschem PID=19687 cmd=xschem -n --spice -q -x -o /tmp/chipify_f828d4bc08 /foss/designs/heichip/isource_beta/testbenches/xschem/tb_isource_beta_tran.sch
+2026-09-15 14:04:39 [INFO    ] chipify.engines.xschem: xschem post-run scan: recent_files=['../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_tran.spice', '../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_op.spice', '../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_tran.xschem.log'] netlist_files=['../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_tran.spice', '../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_op.spice'] chosen=../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_tran.spice
+2026-09-15 14:04:39 [INFO    ] chipify.engines.xschem: Xschem netlist generated OK (spice).
+2026-09-15 14:04:39 [INFO    ] chipify.simulator: Phase 3/3: staging files to RAM disk...
+2026-09-15 14:04:39 [INFO    ] chipify.engines.staging: Staging library files to RAM disk: /tmp/chipify_f828d4bc08
+2026-09-15 14:04:39 [DEBUG   ] chipify.engines.staging: No tb/xschemrc to stage (looked at /foss/designs/heichip/isource_beta/chipify/../testbenches/xschem/xschemrc)
+2026-09-15 14:04:39 [INFO    ] chipify.simulator: transient store: /foss/designs/heichip/isource_beta/chipify/out/analysis_data/transient/20260915_140439
+2026-09-15 14:04:39 [INFO    ] chipify.simulator: Spawning pool: 11 workers, 30 tasks.
+2026-09-15 14:04:39 [DEBUG   ] chipify.simulator: Pool created (forkserver, 11 workers).
+2026-09-15 14:04:39 [DEBUG   ] chipify.simulator: 30 batch tasks submitted (chunk_size=1).
+2026-09-15 14:04:48 [INFO    ] chipify.simulator: Pool finished cleanly. 30 results collected.
+2026-09-15 14:04:48 [INFO    ] chipify.simulator: run_sim() exited.
+2026-09-15 14:04:48 [INFO    ] chipify.gui_qt.sim_worker: run_sim returned 30 rows. Saving results…
+2026-09-15 14:04:48 [INFO    ] chipify.run_meta: Wrote run metadata: /foss/designs/heichip/isource_beta/chipify/out/history/run_20260915_140448.meta.json
+2026-09-15 14:04:48 [INFO    ] chipify.run_meta: Wrote run metadata: /foss/designs/heichip/isource_beta/chipify/out/simulation_results.meta.json
+2026-09-15 14:04:48 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'iout': 'out/res' → 'out/res'
+2026-09-15 14:04:48 [WARNING ] chipify.uikit.services.equations: Scalar equation 'iout' failed: name 'res' is not defined
+2026-09-15 14:04:48 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:48 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:48 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:48 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:48 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:48 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:48 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:48 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:48 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:48 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:04:49 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:04:49 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:30 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:30 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:31 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:31 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:31 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:31 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:31 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:31 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:31 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:31 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:31 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:31 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:31 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:31 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:31 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:31 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:31 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:07:31 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:07:53 [INFO    ] chipify.gui_qt.controllers.simulation: SimulationController.start: corners_ngspice.yaml
+2026-09-15 14:07:53 [INFO    ] chipify.gui_qt.sim_worker: SimWorker.run on thread Dummy-186
+2026-09-15 14:07:53 [INFO    ] chipify.simulator: run_sim() started. Testbenches: 2
+2026-09-15 14:07:53 [INFO    ] chipify.simulator: Phase 1/3: generating parameter cases...
+2026-09-15 14:07:53 [INFO    ] chipify.simulator: Total cases: 30
+2026-09-15 14:07:53 [INFO    ] chipify.simulator: Simulator engine(s) in use: ngspice
+2026-09-15 14:07:53 [INFO    ] chipify.simulator: Phase 2/3: generating Xschem templates...
+2026-09-15 14:07:53 [INFO    ] chipify.engines.xschem: run_xschem: /foss/designs/heichip/isource_beta/testbenches/xschem/tb_isource_beta_op.sch (mode=spice)
+2026-09-15 14:07:53 [INFO    ] chipify.engines.xschem: Xschem env: HOME=/headless XSCHEM_SHAREDIR=None PATH=/headless/.local/bin:/foss/tools/bin:/foss/tools/sak:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/foss/tools/kactus2:/foss/tools/klayout:/foss/tools/osic-multitool cwd=/foss/designs/heichip/isource_beta/chipify
+2026-09-15 14:07:53 [INFO    ] chipify.engines.xschem: Xschem PID=19933 cmd=xschem -n --spice -q -x -o /tmp/chipify_f828d4bc08 /foss/designs/heichip/isource_beta/testbenches/xschem/tb_isource_beta_op.sch
+2026-09-15 14:07:53 [INFO    ] chipify.engines.xschem: xschem post-run scan: recent_files=['../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_op.xschem.log', '../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_op.spice'] netlist_files=['../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_op.spice'] chosen=../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_op.spice
+2026-09-15 14:07:53 [INFO    ] chipify.engines.xschem: Xschem netlist generated OK (spice).
+2026-09-15 14:07:53 [INFO    ] chipify.engines.xschem: run_xschem: /foss/designs/heichip/isource_beta/testbenches/xschem/tb_isource_beta_tran.sch (mode=spice)
+2026-09-15 14:07:53 [INFO    ] chipify.engines.xschem: Xschem env: HOME=/headless XSCHEM_SHAREDIR=None PATH=/headless/.local/bin:/foss/tools/bin:/foss/tools/sak:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/foss/tools/kactus2:/foss/tools/klayout:/foss/tools/osic-multitool cwd=/foss/designs/heichip/isource_beta/chipify
+2026-09-15 14:07:53 [INFO    ] chipify.engines.xschem: Xschem PID=19943 cmd=xschem -n --spice -q -x -o /tmp/chipify_f828d4bc08 /foss/designs/heichip/isource_beta/testbenches/xschem/tb_isource_beta_tran.sch
+2026-09-15 14:07:54 [INFO    ] chipify.engines.xschem: xschem post-run scan: recent_files=['../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_tran.spice', '../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_op.spice', '../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_tran.xschem.log'] netlist_files=['../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_tran.spice', '../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_op.spice'] chosen=../../../../../tmp/chipify_f828d4bc08/tb_isource_beta_tran.spice
+2026-09-15 14:07:54 [INFO    ] chipify.engines.xschem: Xschem netlist generated OK (spice).
+2026-09-15 14:07:54 [INFO    ] chipify.simulator: Phase 3/3: staging files to RAM disk...
+2026-09-15 14:07:54 [INFO    ] chipify.engines.staging: Staging library files to RAM disk: /tmp/chipify_f828d4bc08
+2026-09-15 14:07:54 [DEBUG   ] chipify.engines.staging: No tb/xschemrc to stage (looked at /foss/designs/heichip/isource_beta/chipify/../testbenches/xschem/xschemrc)
+2026-09-15 14:07:54 [INFO    ] chipify.simulator: transient store: /foss/designs/heichip/isource_beta/chipify/out/analysis_data/transient/20260915_140754
+2026-09-15 14:07:54 [INFO    ] chipify.simulator: Spawning pool: 11 workers, 30 tasks.
+2026-09-15 14:07:54 [DEBUG   ] chipify.simulator: Pool created (forkserver, 11 workers).
+2026-09-15 14:07:54 [DEBUG   ] chipify.simulator: 30 batch tasks submitted (chunk_size=1).
+2026-09-15 14:08:02 [INFO    ] chipify.simulator: Pool finished cleanly. 30 results collected.
+2026-09-15 14:08:02 [INFO    ] chipify.simulator: run_sim() exited.
+2026-09-15 14:08:02 [INFO    ] chipify.gui_qt.sim_worker: run_sim returned 30 rows. Saving results…
+2026-09-15 14:08:02 [INFO    ] chipify.run_meta: Wrote run metadata: /foss/designs/heichip/isource_beta/chipify/out/history/run_20260915_140802.meta.json
+2026-09-15 14:08:02 [INFO    ] chipify.run_meta: Wrote run metadata: /foss/designs/heichip/isource_beta/chipify/out/simulation_results.meta.json
+2026-09-15 14:08:02 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'iout': 'out/res' → 'out/res'
+2026-09-15 14:08:02 [WARNING ] chipify.uikit.services.equations: Scalar equation 'iout' failed: name 'res' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
+2026-09-15 14:08:03 [DEBUG   ] chipify.expression: evaluate_dataframe_column 'out_d': 'outp-outn' → 'outp-outn'
+2026-09-15 14:08:03 [DEBUG   ] chipify.plot: Waveform equation 'out_d' skipped: name 'outp' is not defined
