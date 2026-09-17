@@ -2,43 +2,20 @@ parameters:
   temp: [-40, 27, 100]
   seed: range(100)
   vdd: [3.3]
-  vincm: [1.65, 0.2, 3.1]
   sigma: [1]
   corner_mos: ['tt_mismatch', 'ss_mismatch', 'ff_mismatch', 'sf_mismatch', 'fs_mismatch']
   ibias: ['1u']
-  c_load: ['15p', '100f']
-  corner_cap: ['typ_mismatch']
   corner_res: ['stat_mismatch']
-  mm_ok_stg1: [1]
+  w_load: ['5u']
 tests:
-  tb_opamp_rtr_op:
-    engine: ngspice
-    op1.vos:
-      min: -0.01
-      max: 0.01
-      typ: 0.0
-      unit: 'V'
-    op1.gm_pmos: {}
-    op1.gm_nmos: {}
-    noise2.onoise_total: {}
-  tb_opamp_rtr_gain:
-    gain:
-      unit: 'dB'
-      min: 40.0
-    UGF:
-      unit: 'Hz'
-      min: 100000.0
-    phase_margin:
-      unit: "\xB0"
-      min: 50.0
-    engine: ngspice
-  tb_opamp_rtr_tran_psr:
-    transient_signals: [out_psr]
-    engine: ngspice
-  tb_opamp_rtr_tran_rect:
-    transient_signals: [in_rect, out_rect]
-  tb_opamp_rtr_dc:
-    dc_signals: [in_dc, out_dc]
+  tb_isource_beta_op:
+    iout:
+      min: 8.0e-07
+      max: 1.2e-06
+      typ: 1.0e-06
+      unit: 'A'
+    out: {}
+    idd: {}
 equations:
   vd_tr: outp-outn
 transient_equations:

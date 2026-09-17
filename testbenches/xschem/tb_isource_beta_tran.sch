@@ -39,7 +39,7 @@ value="
 .control
 save all
 save @n.xm3.nsg13_hv_nmos[ids]
-tran 1u 10m  
+tran 1u 10m uic
 let idd = i(V3)
 let iout = @n.xm3.nsg13_hv_nmos[ids]
 

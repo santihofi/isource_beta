@@ -22,7 +22,7 @@ N 470 -65 470 -20 {lab=out}
 N 410 -65 410 -20 {lab=GND}
 N 490 -225 490 -205 {lab=vss}
 N 470 -225 490 -225 {lab=vss}
-N 450 -225 450 -205 {lab=#net2}
+N 450 -225 450 -205 {lab=vdd}
 N 490 -225 510 -225 {lab=vss}
 N 470 -225 470 -205 {lab=vss}
 N 510 -225 510 -205 {lab=vss}
@@ -35,7 +35,7 @@ value="
 .param mc_ok = \{\{ sigma \}\}
 .option SEED = \{\{ seed \}\}
 .option method=gear
-
+.ic v(x1.v0)=\{\{vdd\}\}
 .control
 save all
 save @n.xm3.nsg13_hv_nmos[ids]
