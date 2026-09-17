@@ -119,16 +119,16 @@ N 1060 -560 1160 -560 {lab=iref}
 N 1060 -560 1060 -540 {lab=iref}
 N 1140 -510 1160 -510 {lab=vss}
 N 1060 -80 1060 -60 {lab=vss}
-N 1200 -510 1220 -510 {lab=b0}
-N 1200 -410 1220 -410 {lab=b1}
+N 1200 -510 1220 -510 {lab=b4}
+N 1200 -410 1220 -410 {lab=#net7}
 N 1200 -310 1220 -310 {lab=b2}
-N 1200 -210 1220 -210 {lab=b3}
+N 1200 -210 1220 -210 {lab=b1}
 N 1060 -580 1060 -560 {lab=iref}
 N 1160 -80 1160 -60 {lab=vss}
 N 1060 -60 1160 -60 {lab=vss}
 N 1160 -160 1160 -140 {lab=#net6}
 N 1140 -110 1160 -110 {lab=vss}
-N 1200 -110 1220 -110 {lab=b4}
+N 1200 -110 1220 -110 {lab=b0}
 C {opin.sym} 850 -340 1 0 {name=p62 lab=out}
 C {iopin.sym} 60 -510 2 0 {name=p63 lab=vdd}
 C {iopin.sym} 60 -80 2 0 {name=p66 lab=vss}
@@ -205,7 +205,7 @@ w=10u
 spiceprefix=X
 }
 C {title.sym} 160 0 0 0 {name=l1 author="Santiago Hofwimmer"}
-C {sg13cmos5l_pr/rppd.sym} 1060 -110 0 1 {name=R10
+C {sg13cmos5l_pr/rppd.sym} 1060 -510 0 1 {name=R10
 w=1e-6
 l=160e-6
 model=rppd
@@ -219,7 +219,7 @@ value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-
 C {lab_pin.sym} 1140 -410 0 0 {name=p1 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 1140 -310 0 0 {name=p2 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 1140 -210 0 0 {name=p3 sig_type=std_logic lab=vss}
-C {sg13cmos5l_pr/rppd.sym} 1060 -510 0 1 {name=R2
+C {sg13cmos5l_pr/rppd.sym} 1060 -110 0 1 {name=R2
 w=1e-6
 l=10e-6
 model=rppd
@@ -240,7 +240,7 @@ w=16u
 spiceprefix=X
 }
 C {lab_pin.sym} 1140 -510 0 0 {name=p4 sig_type=std_logic lab=vss}
-C {sg13cmos5l_pr/rppd.sym} 1060 -410 0 1 {name=R3
+C {sg13cmos5l_pr/rppd.sym} 1060 -210 0 1 {name=R3
 w=1e-6
 l=20e-6
 model=rppd
@@ -262,7 +262,7 @@ b=0
   mm_ok=1
 value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
 }
-C {sg13cmos5l_pr/rppd.sym} 1060 -210 0 1 {name=R5
+C {sg13cmos5l_pr/rppd.sym} 1060 -410 0 1 {name=R5
 w=1e-6
 l=80e-6
 model=rppd
@@ -301,10 +301,10 @@ w=16u
  model=sg13_hv_nmos
 spiceprefix=X
 }
-C {iopin.sym} 1220 -510 0 0 {name=p6 lab=b0}
-C {iopin.sym} 1220 -410 0 0 {name=p7 lab=b1}
+C {iopin.sym} 1220 -110 0 0 {name=p6 lab=b0}
+C {iopin.sym} 1220 -210 0 0 {name=p7 lab=b1}
 C {iopin.sym} 1220 -310 0 0 {name=p8 lab=b2}
-C {iopin.sym} 1220 -210 0 0 {name=p9 lab=b3}
+C {iopin.sym} 1220 -410 0 0 {name=p9 lab=b3}
 C {lab_pin.sym} 700 -180 3 0 {name=p10 sig_type=std_logic lab=iref}
 C {lab_pin.sym} 1060 -580 1 0 {name=p11 sig_type=std_logic lab=iref}
 C {lab_pin.sym} 1140 -110 0 0 {name=p12 sig_type=std_logic lab=vss}
@@ -317,5 +317,5 @@ w=16u
  model=sg13_hv_nmos
 spiceprefix=X
 }
-C {iopin.sym} 1220 -110 0 0 {name=p13 lab=b4}
+C {iopin.sym} 1220 -510 0 0 {name=p13 lab=b4}
 C {lab_pin.sym} 610 -385 0 0 {name=p14 sig_type=std_logic lab=v0}
