@@ -61,7 +61,8 @@ value="
 .lib cornerRES.lib res_\{\{ corner_res \}\}
 "
       }
-C {heichip/isource_beta/schematic/xschem/isource_beta.sym} 410 -135 0 0 {name=x1}
+C {heichip/isource_beta/schematic/xschem/isource_beta.sym} 150 -105 0 0 {name=x1
+spice_ignore=true}
 C {gnd.sym} 410 -20 0 0 {name=l2 lab=GND}
 C {sg13cmos5l_pr/sg13_hv_nmos.sym} 500 30 0 0 {name=M3
 l=4u
@@ -75,3 +76,8 @@ spiceprefix=X
 C {gnd.sym} 520 85 0 0 {name=l3 lab=GND}
 C {lab_pin.sym} 530 -230 3 1 {name=p3 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 450 -225 3 1 {name=p2 sig_type=std_logic lab=vdd}
+C {heichip/isource_beta/schematic/xschem/isource_beta_pex.sym} 410 -135 0 0 {name=x2}
+C {devices/code_shown.sym} 40 230 0 0 {name=inc only_toplevel=true 
+value="
+.include /foss/designs/heichip/isource_beta/netlist/pex/isource_beta_magic_pex_3.spice
+"}
