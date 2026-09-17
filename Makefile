@@ -4,7 +4,7 @@
 MAKEFILE_DIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
 # Variables
-TOP = opamp_rtr
+TOP = isource_beta
 
 .DEFAULT_GOAL := help
 

@@ -1,0 +1,40 @@
+* Extracted by KLayout with SG13CMOS5L LVS runset on : 17/09/2026 12:53
+
+.SUBCKT isource_beta b0 b1 b2 b3 b4 out vdd vss
+M$1 \$2 \$2 \$2 vss sg13_hv_nmos L=0.5u W=100u AS=26.5p AD=26.5p PS=160.6u
++ PD=160.6u rfmode=0
+M$2 \$2 \$5 \$26 vss sg13_hv_nmos L=4u W=120u AS=22.8p AD=22.8p PS=129.12u
++ PD=129.12u rfmode=0
+M$46 vss \$5 \$5 vss sg13_hv_nmos L=4u W=40u AS=7.6p AD=7.6p PS=43.04u
++ PD=43.04u rfmode=0
+M$58 vdd \$2 out vdd sg13_hv_pmos L=4u W=12u AS=2.28p AD=2.28p PS=13.52u
++ PD=13.52u rfmode=0
+M$60 vdd \$2 \$5 vdd sg13_hv_pmos L=4u W=12u AS=2.28p AD=2.28p PS=13.52u
++ PD=13.52u rfmode=0
+M$64 vdd \$2 \$2 vdd sg13_hv_pmos L=4u W=12u AS=2.28p AD=2.28p PS=13.52u
++ PD=13.52u rfmode=0
+M$74 vss vss vss vss sg13_hv_nmos L=0.45u W=26u AS=6.89p AD=6.89p PS=41.12u
++ PD=41.12u rfmode=0
+M$75 vss \$5 \$76 vss sg13_hv_nmos L=0.45u W=10u AS=1.9p AD=1.9p PS=10.76u
++ PD=10.76u rfmode=0
+M$77 vss \$76 \$2 vss sg13_hv_nmos L=0.45u W=10u AS=1.9p AD=1.9p PS=10.76u
++ PD=10.76u rfmode=0
+M$80 \$76 vdd vdd vdd sg13_hv_pmos L=10u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$82 vss b0 \$94 vss sg13_hv_nmos L=0.45u W=16u AS=3.04p AD=3.04p PS=16.76u
++ PD=16.76u rfmode=0
+M$83 \$94 b1 \$93 vss sg13_hv_nmos L=0.45u W=16u AS=3.04p AD=3.04p PS=16.76u
++ PD=16.76u rfmode=0
+M$84 \$93 b2 \$92 vss sg13_hv_nmos L=0.45u W=16u AS=3.04p AD=3.04p PS=16.76u
++ PD=16.76u rfmode=0
+M$85 \$92 b3 \$101 vss sg13_hv_nmos L=0.45u W=16u AS=3.04p AD=3.04p PS=16.76u
++ PD=16.76u rfmode=0
+M$86 \$101 b4 \$26 vss sg13_hv_nmos L=0.45u W=16u AS=3.04p AD=3.04p PS=16.76u
++ PD=16.76u rfmode=0
+R$93 vss vss vss rppd w=1u l=10u ps=0u b=0 m=2
+R$107 \$26 \$101 vss rppd w=1u l=160u ps=0u b=0 m=1
+R$115 \$101 \$92 vss rppd w=1u l=80u ps=0u b=0 m=1
+R$120 \$93 \$92 vss rppd w=1u l=40u ps=0u b=0 m=1
+R$122 \$94 \$93 vss rppd w=1u l=20u ps=0u b=0 m=1
+R$124 vss \$94 vss rppd w=1u l=10u ps=0u b=0 m=1
+.ENDS isource_beta

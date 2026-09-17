@@ -15,8 +15,14 @@ L 4 460 -560 460 -60 {}
 L 4 460 -60 770 -60 {}
 L 4 770 -560 770 -60 {}
 L 4 460 -560 770 -560 {}
+L 4 -0 -560 0 -60 {}
+L 4 -260 -560 0 -560 {}
+L 4 -255 -60 -0 -60 {}
+L 4 -260 -560 -260 -60 {}
+L 4 -260 -60 -255 -60 {}
 T {startup circuit} 150 -550 0 0 0.4 0.4 {}
 T {beta multiplier} 530 -550 0 0 0.4 0.4 {}
+T {dummies} -180 -545 0 0 0.4 0.4 {}
 N 500 -410 520 -410 {lab=vdd}
 N 500 -460 500 -410 {lab=vdd}
 N 500 -460 520 -460 {lab=vdd}
@@ -120,7 +126,7 @@ N 1060 -560 1060 -540 {lab=iref}
 N 1140 -510 1160 -510 {lab=vss}
 N 1060 -80 1060 -60 {lab=vss}
 N 1200 -510 1220 -510 {lab=b4}
-N 1200 -410 1220 -410 {lab=#net7}
+N 1200 -410 1220 -410 {lab=b3}
 N 1200 -310 1220 -310 {lab=b2}
 N 1200 -210 1220 -210 {lab=b1}
 N 1060 -580 1060 -560 {lab=iref}
@@ -129,6 +135,26 @@ N 1060 -60 1160 -60 {lab=vss}
 N 1160 -160 1160 -140 {lab=#net6}
 N 1140 -110 1160 -110 {lab=vss}
 N 1200 -110 1220 -110 {lab=b0}
+N -150 -250 -130 -250 {lab=vss}
+N -70 -250 -50 -250 {lab=v0}
+N -70 -300 -70 -250 {lab=v0}
+N -90 -250 -70 -250 {lab=v0}
+N -130 -300 -70 -300 {lab=v0}
+N -130 -300 -130 -280 {lab=v0}
+N -130 -220 -130 -200 {lab=v0}
+N -130 -200 -70 -200 {lab=v0}
+N -70 -250 -70 -200 {lab=v0}
+N -150 -130 -130 -130 {lab=vss}
+N -70 -130 -50 -130 {lab=vss}
+N -70 -180 -70 -130 {lab=vss}
+N -90 -130 -70 -130 {lab=vss}
+N -130 -180 -70 -180 {lab=vss}
+N -130 -180 -130 -160 {lab=vss}
+N -130 -100 -130 -80 {lab=vss}
+N -130 -80 -70 -80 {lab=vss}
+N -70 -130 -70 -80 {lab=vss}
+N -135 -375 -135 -360 {lab=vss}
+N -135 -450 -135 -435 {lab=vss}
 C {opin.sym} 850 -340 1 0 {name=p62 lab=out}
 C {iopin.sym} 60 -510 2 0 {name=p63 lab=vdd}
 C {iopin.sym} 60 -80 2 0 {name=p66 lab=vss}
@@ -153,7 +179,7 @@ spiceprefix=X
 C {sg13cmos5l_pr/sg13_hv_nmos.sym} 540 -270 0 1 {name=M3
 l=4u
 w=40u
- ng=10
+ ng=8
  m=1
   mm_ok=1
  model=sg13_hv_nmos
@@ -162,7 +188,7 @@ spiceprefix=X
 C {sg13cmos5l_pr/sg13_hv_nmos.sym} 680 -270 0 0 {name=M4
 l=4u
 w=40u
- ng=10
+ ng=8
  m=3
   mm_ok=1
  model=sg13_hv_nmos
@@ -179,7 +205,7 @@ spiceprefix=X
 }
 C {sg13cmos5l_pr/sg13_hv_pmos.sym} 140 -410 0 0 {name=MS1
 l=10u
-w=0.5u
+w=1u
  ng=1
  m=1
   mm_ok=1
@@ -189,7 +215,7 @@ spiceprefix=X
 C {sg13cmos5l_pr/sg13_hv_nmos.sym} 140 -270 0 0 {name=MS2
 l=0.45u
 w=10u
- ng=1
+ ng=2
  m=1
   mm_ok=1
  model=sg13_hv_nmos
@@ -198,7 +224,7 @@ spiceprefix=X
 C {sg13cmos5l_pr/sg13_hv_nmos.sym} 300 -270 0 0 {name=MS3
 l=0.45u
 w=10u
- ng=1
+ ng=2
  m=1
   mm_ok=1
  model=sg13_hv_nmos
@@ -319,3 +345,38 @@ spiceprefix=X
 }
 C {iopin.sym} 1220 -510 0 0 {name=p13 lab=b4}
 C {lab_pin.sym} 610 -385 0 0 {name=p14 sig_type=std_logic lab=v0}
+C {sg13cmos5l_pr/sg13_hv_nmos.sym} -110 -250 0 1 {name=M11
+l=0.5u
+w=100u
+ ng=20
+ m=1
+  mm_ok=1
+ model=sg13_hv_nmos
+spiceprefix=X
+}
+C {lab_pin.sym} -150 -250 0 0 {name=p15 sig_type=std_logic lab=vss}
+C {lab_pin.sym} -50 -250 2 0 {name=p17 sig_type=std_logic lab=v0}
+C {sg13cmos5l_pr/sg13_hv_nmos.sym} -110 -130 0 1 {name=M12
+l=0.45u
+w=26u
+ ng=4
+ m=1
+  mm_ok=1
+ model=sg13_hv_nmos
+spiceprefix=X
+}
+C {lab_pin.sym} -150 -130 0 0 {name=p18 sig_type=std_logic lab=vss}
+C {lab_pin.sym} -50 -130 2 0 {name=p19 sig_type=std_logic lab=vss}
+C {sg13cmos5l_pr/rppd.sym} -135 -405 0 1 {name=R1
+w=1e-6
+l=10e-6
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=2
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}
+C {lab_pin.sym} -135 -360 3 0 {name=p20 sig_type=std_logic lab=vss}
+C {lab_pin.sym} -135 -450 1 0 {name=p21 sig_type=std_logic lab=vss}

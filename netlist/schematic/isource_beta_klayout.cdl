@@ -1,0 +1,25 @@
+** sch_path: /foss/designs/heichip/isource_beta/schematic/xschem/isource_beta.sch
+.subckt isource_beta b0 vdd b1 out b2 b3 vss b4
+*.PININFO out:O vdd:B vss:B b0:B b1:B b2:B b3:B b4:B
+MM1 net1 v0 vdd vdd sg13_hv_pmos w=12u l=4u ng=4
+MM2 v0 v0 vdd vdd sg13_hv_pmos w=12u l=4u ng=4
+MM3 net1 net1 vss vss sg13_hv_nmos w=40u l=4u ng=8
+MM4 v0 net1 iref vss sg13_hv_nmos w=40u l=4u ng=8 m=3
+MM5 out v0 vdd vdd sg13_hv_pmos w=12u l=4u ng=4
+MMS1 net2 vdd vdd vdd sg13_hv_pmos w=1u l=10u ng=1
+MMS2 net2 net1 vss vss sg13_hv_nmos w=10u l=0.45u ng=2
+MMS3 v0 net2 vss vss sg13_hv_nmos w=10u l=0.45u ng=2
+RR10 iref net4 41.422k $SUB=vss $[rppd] w=1e-6 l=160e-6 b=0
+RR2 net6 vss 2.6545k $SUB=vss $[rppd] w=1e-6 l=10e-6 b=0
+MM6 iref b4 net4 vss sg13_hv_nmos w=16u l=0.45u ng=2
+RR3 net5 net6 5.239k $SUB=vss $[rppd] w=1e-6 l=20e-6 b=0
+RR4 net3 net5 10.408k $SUB=vss $[rppd] w=1e-6 l=40e-6 b=0
+RR5 net4 net3 20.746k $SUB=vss $[rppd] w=1e-6 l=80e-6 b=0
+MM7 net4 b3 net3 vss sg13_hv_nmos w=16u l=0.45u ng=2
+MM8 net3 b2 net5 vss sg13_hv_nmos w=16u l=0.45u ng=2
+MM9 net5 b1 net6 vss sg13_hv_nmos w=16u l=0.45u ng=2
+MM10 net6 b0 vss vss sg13_hv_nmos w=16u l=0.45u ng=2
+MM11 v0 v0 v0 vss sg13_hv_nmos w=100u l=0.5u ng=20
+MM12 vss vss vss vss sg13_hv_nmos w=26u l=0.45u ng=4
+RR1 vss vss 1.3272k $SUB=vss $[rppd] w=1e-6 l=10e-6 b=0 m=2
+.ends
