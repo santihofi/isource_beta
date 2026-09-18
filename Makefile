@@ -3,6 +3,9 @@
 
 MAKEFILE_DIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
+export PDKPATH ?= $(PDK_ROOT)/$(PDK)
+export STD_CELL_LIBRARY ?= sg13cmos5l_stdcell
+
 # Variables
 TOP = isource_beta
 
