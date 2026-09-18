@@ -153,8 +153,29 @@ N -130 -180 -130 -160 {lab=vss}
 N -130 -100 -130 -80 {lab=vss}
 N -130 -80 -70 -80 {lab=vss}
 N -70 -130 -70 -80 {lab=vss}
-N -135 -375 -135 -360 {lab=vss}
-N -135 -450 -135 -435 {lab=vss}
+N -25 -395 -25 -380 {lab=vss}
+N -25 -470 -25 -455 {lab=vss}
+N -130 -470 -120 -470 {lab=vss}
+N -180 -440 -180 -420 {lab=vss}
+N -200 -420 -180 -420 {lab=vss}
+N -200 -470 -200 -420 {lab=vss}
+N -200 -520 -180 -520 {lab=vss}
+N -180 -520 -180 -500 {lab=vss}
+N -180 -520 -130 -520 {lab=vss}
+N -130 -520 -130 -470 {lab=vss}
+N -140 -470 -130 -470 {lab=vss}
+N -200 -470 -180 -470 {lab=vss}
+N -200 -520 -200 -470 {lab=vss}
+N -130 -370 -120 -370 {lab=vdd}
+N -180 -340 -180 -320 {lab=vdd}
+N -180 -320 -130 -320 {lab=vdd}
+N -130 -370 -130 -320 {lab=vdd}
+N -140 -370 -130 -370 {lab=vdd}
+N -200 -400 -180 -400 {lab=vdd}
+N -200 -370 -200 -320 {lab=vdd}
+N -200 -320 -180 -320 {lab=vdd}
+N -200 -370 -180 -370 {lab=vdd}
+N -200 -400 -200 -370 {lab=vdd}
 C {opin.sym} 850 -340 1 0 {name=p62 lab=out}
 C {iopin.sym} 60 -510 2 0 {name=p63 lab=vdd}
 C {iopin.sym} 60 -80 2 0 {name=p66 lab=vss}
@@ -367,7 +388,7 @@ spiceprefix=X
 }
 C {lab_pin.sym} -150 -130 0 0 {name=p18 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -50 -130 2 0 {name=p19 sig_type=std_logic lab=vss}
-C {sg13cmos5l_pr/rppd.sym} -135 -405 0 1 {name=R1
+C {sg13cmos5l_pr/rppd.sym} -25 -425 0 1 {name=R1
 w=1e-6
 l=10e-6
 model=rppd
@@ -378,5 +399,25 @@ b=0
   mm_ok=1
 value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
 }
-C {lab_pin.sym} -135 -360 3 0 {name=p20 sig_type=std_logic lab=vss}
-C {lab_pin.sym} -135 -450 1 0 {name=p21 sig_type=std_logic lab=vss}
+C {lab_pin.sym} -25 -380 3 0 {name=p20 sig_type=std_logic lab=vss}
+C {lab_pin.sym} -25 -470 1 0 {name=p21 sig_type=std_logic lab=vss}
+C {sg13cmos5l_pr/sg13_hv_nmos.sym} -160 -470 0 1 {name=M13
+l=0.5u
+w=20u
+ ng=4
+ m=1
+  mm_ok=1
+ model=sg13_hv_nmos
+spiceprefix=X
+}
+C {lab_pin.sym} -120 -470 2 0 {name=p16 sig_type=std_logic lab=vss}
+C {sg13cmos5l_pr/sg13_hv_pmos.sym} -160 -370 2 0 {name=MS4
+l=0.4u
+w=18u
+ ng=6
+ m=1
+  mm_ok=1
+ model=sg13_hv_pmos
+spiceprefix=X
+}
+C {lab_pin.sym} -120 -370 2 0 {name=p22 sig_type=std_logic lab=vdd}
